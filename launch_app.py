@@ -1,5 +1,5 @@
 from transformers import pipeline
-import tokenizers
+from tokenizers import Tokenizer
 import streamlit as st
 
 # Function to clean text-output
@@ -32,7 +32,7 @@ def clean_output(text):
 
     return ':'.join(text_split)
 
-@st.cache(hash_funcs={tokenizers.Tokenizer:id})
+@st.cache(hash_funcs={Tokenizer:id})
 def get_pipeline(task, repo_path):
     return pipeline(task, model=repo_path)
 
