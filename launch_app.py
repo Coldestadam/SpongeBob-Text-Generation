@@ -27,7 +27,11 @@ def clean_output(text):
                 quote = quote[:last_puncation+1]
             else:
                 last_puncation = max(last_idxs)
-                quote = quote[:last_puncation+1] + '\n' + quote[last_puncation+1:]
+                # This checks if Mr. Krabs is the last word in the quote
+                if quote[last_puncation-2:last_puncation+1] == 'Mr.':
+                    quote = quote[:last_puncation-2] + '\n' + quote[last_puncation-2:]
+                else:
+                    quote = quote[:last_puncation+1] + '\n' + quote[last_puncation+1:]
         text_split[i] = quote
 
     return ':'.join(text_split)
