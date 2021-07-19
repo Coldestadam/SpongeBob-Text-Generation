@@ -5,9 +5,7 @@ import streamlit as st
 def clean_output(text):
     """
     This takes the text-generated output of the model and cleans it up for printing purposes
-
     @param text: The text-generated output of the model
-
     @return: The cleaned up text-generated output
     """
     punctuations = ['!', '.', '?', ']']
@@ -33,7 +31,7 @@ def clean_output(text):
 
     return ':'.join(text_split)
 
-@st.cache
+@st.cache(hash_funcs={tokenizers.Tokenizer:'id'})
 def get_pipeline(task, repo_path):
     return pipeline(task, model=repo_path)
 
