@@ -40,7 +40,7 @@ def get_pipeline(task, repo_path):
 # Loading model using Pipeline to easily use the model
 task = 'text-generation'
 repo_path = "Coldestadam/Breakout_Mentors_SpongeBob_Model"
-generator = get_pipeline(task, model=repo_path)
+generator = get_pipeline(task, repo_path)
 
 # Giving a title to the app
 st.title("SpongeBob NLP App")
