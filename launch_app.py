@@ -53,15 +53,20 @@ st.image("https://media2.giphy.com/media/nDSlfqf0gn5g4/giphy.gif")
 
 # Explanation
 st.header("How does this app work?")
-markdown_text = """This app uses [HuggingFace](https://huggingface.co/), an open repository and library to pretrained transformer models. A [smaller version of GPT-2](https://huggingface.co/distilgpt2) that was pretrained was finetuend on scripts of the show [SpongeBob SquarePants](https://www.kaggle.com/mikhailgaerlan/spongebob-squarepants-completed-transcripts), then an app was implemented and hosted with [Streamlit](https://streamlit.io/)."""
-st.markdown(markdown_text)
+
+st.markdown("""This app uses [HuggingFace](https://huggingface.co/), an open repository and library to pretrained transformer models. 
+A [smaller version of GPT-2](https://huggingface.co/distilgpt2) that was pretrained was finetuend on scripts of the show [SpongeBob SquarePants](https://www.kaggle.com/mikhailgaerlan/spongebob-squarepants-completed-transcripts), then an app was implemented and hosted with [Streamlit](https://streamlit.io/).""")
 st.header("What are tokens?")
 st.write("Tokens are split up pieces of a string, such as words.")
 st.code("""sentence='Hi my name is Adam!'
 tokenized_sentence = tokenizer(sentence)
 print(tokeized_sentence)
 >> ['Hi', 'my', 'name', 'is', 'Adam', '!']""")
-
+st.write("You can see that sentence is broken down to smaller components such as words separated by spaces, which is an example of subword tokenization.")
+st.markdown("""There are other types of tokenization techniques used in Natural Language Processing, including Byte-Pair Encoding (BPE) that was used for GPT2.
+Here are two sources to read more:
+1. [HuggingFace Summary](https://huggingface.co/transformers/tokenizer_summary.html#summary-of-the-tokenizers)
+2. [FloydHub Blog](https://blog.floydhub.com/tokenization-nlp/)""")
 
 
 # Getting the number of tokens for the model with a text box
