@@ -45,7 +45,7 @@ generator = get_pipeline(task, repo_path)
 st.title("SpongeBob NLP App")
 
 # Getting the number of tokens for the model with a text box
-num_tokens = st.number_input('Number of Tokens:', min_value=20, max_value=500, step=1)
+num_tokens = st.number_input('Number of Tokens:', min_value=100, max_value=1000, step=1)
 
 # Using a select box to choose the first character for the script
 characters = ['SpongeBob', 'Patrick', 'Squidward', 'Gary']
