@@ -70,6 +70,7 @@ Here are two sources to read more:
 1. [HuggingFace Summary](https://huggingface.co/transformers/tokenizer_summary.html#summary-of-the-tokenizers)
 2. [FloydHub Blog](https://blog.floydhub.com/tokenization-nlp/)""")
 
+st.write("The takeaway here is that the more tokens you want to generate, the greater number of words you get in return.")
 
 # Getting the number of tokens for the model with a text box
 num_tokens = st.number_input('Number of Tokens:', min_value=100, max_value=1000, step=1)
