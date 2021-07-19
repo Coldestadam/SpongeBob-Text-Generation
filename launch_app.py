@@ -52,7 +52,7 @@ st.title("SpongeBob NLP App")
 num_tokens = st.number_input('Number of Tokens:', min_value=100, max_value=1000, step=1)
 
 # Using a select box to choose the first character for the script
-characters = ['SpongeBob', 'Patrick', 'Squidward', 'Gary']
+characters = ['SpongeBob', 'Patrick', 'Squidward', 'Gary', 'Mr. Krabs']
 selected_character = st.selectbox('Select the character to begin the script', characters)
 
 # Generating the model and wiritng it after the 'Generate Script' button is pressed
