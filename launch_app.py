@@ -52,9 +52,15 @@ st.title("SpongeBob NLP App")
 st.image("https://media2.giphy.com/media/nDSlfqf0gn5g4/giphy.gif")
 
 # Explanation
-st.header("How does this work?")
-markdown_text = """This app takes uses [HuggingFace](https://huggingface.co/), an open repository and library to pretrained transformer models. A [smaller version of GPT-2](https://huggingface.co/distilgpt2) that was pretrained was finetuend on scripts of the show [SpongeBob SquarePants](https://www.kaggle.com/mikhailgaerlan/spongebob-squarepants-completed-transcripts), then an app was implemented and hosted with [Streamlit](https://streamlit.io/)."""
+st.header("How does this app work?")
+markdown_text = """This app uses [HuggingFace](https://huggingface.co/), an open repository and library to pretrained transformer models. A [smaller version of GPT-2](https://huggingface.co/distilgpt2) that was pretrained was finetuend on scripts of the show [SpongeBob SquarePants](https://www.kaggle.com/mikhailgaerlan/spongebob-squarepants-completed-transcripts), then an app was implemented and hosted with [Streamlit](https://streamlit.io/)."""
 st.markdown(markdown_text)
+st.header("What are tokens?")
+st.write("Tokens are split up pieces of a string, such as words.")
+st.code("""sentence='Hi my name is Adam!'
+            tokenized_sentence = tokenizer(sentence)
+            print(tokeized_sentence)""")
+
 
 # Getting the number of tokens for the model with a text box
 num_tokens = st.number_input('Number of Tokens:', min_value=100, max_value=1000, step=1)
