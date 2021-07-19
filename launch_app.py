@@ -1,10 +1,7 @@
 from transformers import pipeline
 import streamlit as st
 
-# Loading model using Pipeline to easily use the model
-repo_path = "Coldestadam/Breakout_Mentors_SpongeBob_Model"
-generator = pipeline('text-generation', model=repo_path)
-
+# Function to clean text-output
 def clean_output(text):
     """
     This takes the text-generated output of the model and cleans it up for printing purposes
@@ -35,6 +32,15 @@ def clean_output(text):
         text_split[i] = quote
 
     return ':'.join(text_split)
+
+@st.cache
+def get_pipeline(task, repo_path):
+    return pipeline(task, model=repo_path)
+
+# Loading model using Pipeline to easily use the model
+task = 'text-generation'
+repo_path = "Coldestadam/Breakout_Mentors_SpongeBob_Model"
+generator = get_pipeline(task, model=repo_path)
 
 # Giving a title to the app
 st.title("SpongeBob NLP App")
