@@ -46,7 +46,7 @@ repo_path = "Coldestadam/Breakout_Mentors_SpongeBob_Model"
 generator = get_pipeline(task, repo_path)
 
 # Giving a title to the app
-st.title("SpongeBob SquarePants Script-Generator")
+st.title("SpongeBob Script-Generator")
 
 # Showing GIF
 st.image("https://media2.giphy.com/media/nDSlfqf0gn5g4/giphy.gif")
