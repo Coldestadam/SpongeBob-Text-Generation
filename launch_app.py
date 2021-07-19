@@ -32,7 +32,7 @@ def clean_output(text):
 
     return ':'.join(text_split)
 
-@st.cache(hash_funcs={tokenizers.Tokenizer:'id'})
+@st.cache(hash_funcs={tokenizers.Tokenizer:id})
 def get_pipeline(task, repo_path):
     return pipeline(task, model=repo_path)
 
