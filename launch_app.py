@@ -57,9 +57,7 @@ markdown_text = """This app uses [HuggingFace](https://huggingface.co/), an open
 st.markdown(markdown_text)
 st.header("What are tokens?")
 st.write("Tokens are split up pieces of a string, such as words.")
-st.code("""sentence='Hi my name is Adam!'
-            tokenized_sentence = tokenizer(sentence)
-            print(tokeized_sentence)""")
+st.code("""sentence='Hi my name is Adam!' tokenized_sentence = tokenizer(sentence) print(tokeized_sentence)""")
 
 
 # Getting the number of tokens for the model with a text box
