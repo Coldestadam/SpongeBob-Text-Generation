@@ -74,7 +74,7 @@ Here are two sources to read more:
 st.write("The takeaway here is that the more tokens you want to generate, the greater number of words you get in return.")
 
 st.header("Github Repository")
-st.markdown("Please look at the code to see how everything was completed [here](./SpongeBobSpongeBob-Text-Generation)")
+st.markdown("Please look at the code to see how everything was completed [here](./).")
 
 # Getting the number of tokens for the model with a text box
 num_tokens = st.number_input('Number of Tokens to generate:', min_value=100, max_value=1000, step=1)
