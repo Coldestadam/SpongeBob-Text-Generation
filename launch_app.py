@@ -48,6 +48,9 @@ generator = get_pipeline(task, repo_path)
 # Giving a title to the app
 st.title("SpongeBob NLP App")
 
+# Showing GIF
+st.image(https://media2.giphy.com/media/nDSlfqf0gn5g4/giphy.gif)
+
 # Getting the number of tokens for the model with a text box
 num_tokens = st.number_input('Number of Tokens:', min_value=100, max_value=1000, step=1)
 
