@@ -53,8 +53,7 @@ st.image("https://media2.giphy.com/media/nDSlfqf0gn5g4/giphy.gif")
 
 # Explanation
 st.header("How does this work?")
-st.subheader("Model")
-markdown_text = """This model was trained on a smaller version of OpenAI's GPT-2 called [DistilGPT2](https://huggingface.co/distilgpt2)"""
+markdown_text = """This app takes uses [HuggingFace](https://huggingface.co/), an open repository and library to pretrained transformer models. A [smaller version of GPT-2](https://huggingface.co/distilgpt2) that was pretrained was finetuend on scripts of the show [SpongeBob SquarePants](https://www.kaggle.com/mikhailgaerlan/spongebob-squarepants-completed-transcripts), then an app was implemented and hosted with [Streamlit](https://streamlit.io/)."""
 st.markdown(markdown_text)
 
 # Getting the number of tokens for the model with a text box
