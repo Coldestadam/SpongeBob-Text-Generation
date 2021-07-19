@@ -46,7 +46,7 @@ repo_path = "Coldestadam/Breakout_Mentors_SpongeBob_Model"
 generator = get_pipeline(task, repo_path)
 
 # Giving a title to the app
-st.title("SpongeBob NLP App")
+st.title("SpongeBob SquarePants Script-Generator")
 
 # Showing GIF
 st.image("https://media2.giphy.com/media/nDSlfqf0gn5g4/giphy.gif")
@@ -75,6 +75,8 @@ st.write("The takeaway here is that the more tokens you want to generate, the gr
 
 st.subheader("Github Repository")
 st.markdown("Please look at the code to see how everything was completed [here](https://github.com/Coldestadam/SpongeBob-Text-Generation).")
+
+st.header("Generate Script Below:")
 
 # Getting the number of tokens for the model with a text box
 num_tokens = st.number_input('Number of Tokens to generate:', min_value=100, max_value=1000, step=1)
