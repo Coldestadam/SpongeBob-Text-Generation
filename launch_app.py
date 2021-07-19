@@ -51,6 +51,12 @@ st.title("SpongeBob NLP App")
 # Showing GIF
 st.image("https://media2.giphy.com/media/nDSlfqf0gn5g4/giphy.gif")
 
+# Explanation
+st.header("How does this work?")
+st.subheader("Model")
+markdown_text = """This model was trained on a smaller version of OpenAI's GPT-2 called [DistilGPT2](https://huggingface.co/distilgpt2)"""
+st.markdown(markdown_text)
+
 # Getting the number of tokens for the model with a text box
 num_tokens = st.number_input('Number of Tokens:', min_value=100, max_value=1000, step=1)
 
