@@ -64,7 +64,9 @@ print(tokeized_sentence)
 >> ['Hi', 'my', 'name', 'is', 'Adam', '!']""")
 st.write("You can see that sentence is broken down to smaller components such as words separated by spaces, which is an example of subword tokenization.")
 st.markdown("""There are other types of tokenization techniques used in Natural Language Processing, including Byte-Pair Encoding (BPE) that was used for GPT2.
+
 Here are two sources to read more:
+
 1. [HuggingFace Summary](https://huggingface.co/transformers/tokenizer_summary.html#summary-of-the-tokenizers)
 2. [FloydHub Blog](https://blog.floydhub.com/tokenization-nlp/)""")
 
