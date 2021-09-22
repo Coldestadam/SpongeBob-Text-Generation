@@ -1,6 +1,6 @@
 # SpongeBob-Text-Generation
 
-ML App implemented with HuggingFace and Streamlit using a finetuned GPT-2 model trained with SponegBob scripts.
+ML App implemented with HuggingFace and Streamlit using a finetuned GPT-2 model trained with SpongeBob scripts.
 
 ![SpongeBob GIF](https://media2.giphy.com/media/nDSlfqf0gn5g4/giphy.gif)
 
